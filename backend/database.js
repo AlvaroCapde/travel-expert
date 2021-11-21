@@ -2,11 +2,7 @@ const mongoose = require('mongoose');
 
 const uri = 'mongodb://localhost/travel-expert';
 
-mongoose.connect(uri,{
-    useUnifiedTopolgy: true,
-    useNewUrlParser: true,
-    useCreateIndex: true
-});
+mongoose.connect(uri, {useNewUrlParser: true});
 
 const connection = mongoose.connection
 
