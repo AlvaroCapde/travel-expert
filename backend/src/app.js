@@ -18,4 +18,15 @@ app.use(express.json());
 app.use('/api/users', usersRouter);
 app.use('/api/flights', flightsRouter);
 
+// server static assets if in production
+if(process.env.NODE_ENV === 'production') {
+    // Set static folder
+    app.use(express.static('frontend/build'));
+    // Redirect to build folder
+    app.get('*',(req, res) => {
+        res.sendFile(path.resolve(__dirname, 'frontend', 'build', 'index.html'));
+    });
+
+}
+
 module.exports = app;
