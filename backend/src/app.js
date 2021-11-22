@@ -1,5 +1,6 @@
 const express = require('express');
 const cors = require("cors");
+const morgan = require("morgan");
 const app = express();
 
 const usersRouter = require("./routes/users");
@@ -9,6 +10,7 @@ const flightsRouter = require("./routes/flights");
 app.set("port", process.env.PORT || 8000);
 
 // middlewares
+app.use(morgan("tiny"));
 app.use(cors());
 app.use(express.json());
 
