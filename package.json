@@ -1,0 +1,25 @@
+{
+  "name": "travel-expert",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "(cd backend && npm i); (cd frontend && npm i);",
+    "backend": "cd backend && nodemon src/index.js",
+    "frontend": "cd frontend && npm start",
+    "test": "concurrently -n 'backend,frontend' -c 'red,green' \"npm run backend\" \"npm run frontend\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlvaroCapde/travel-expert.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlvaroCapde/travel-expert/issues"
+  },
+  "homepage": "https://github.com/AlvaroCapde/travel-expert#readme",
+  "dependencies": {
+    "concurrently": "^6.4.0"
+  }
+}
