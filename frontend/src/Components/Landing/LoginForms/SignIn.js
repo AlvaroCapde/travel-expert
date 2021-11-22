@@ -3,10 +3,7 @@ import React from 'react'
 export default function SignIn() {
     return (
         <form action="#" method="POST" className="space-y-6">
-                        
-
                         <div>
-                          
                           <input
                             type="email"
                             name="mobile-or-email"

@@ -49,12 +49,12 @@ export default function CreateAccount() {
                         </div>
 
                         <div>
-                          <button
-                            type="submit"
+                          <a
+                            href="/home"
                             className="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-primaryDark hover:bg-primaryLight focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primaryLight"
                           >
                             Create your account
-                          </button>
+                          </a>
                         </div>
                       </form>
     )

@@ -3,10 +3,11 @@ import { Popover} from '@headlessui/react'
 
 import planeLogo from '../../static/planeLogo.svg'
 import landing from '../../static/landing.svg'
+import { HashLink as Link } from 'react-router-hash-link';
 
 export default function LandingHero() {
   return (
-    <div className="relative overflow-hidden">
+    <div className="relative overflow-hidde ">
       <Popover as="header" className="relative">
         <div className="bg-gray-900 py-6">
           <nav
@@ -30,12 +31,12 @@ export default function LandingHero() {
             </div>
             <div className="hidden md:flex md:items-center md:space-x-6">
               
-              <a
-                href="#"
+              <Link
+                smooth to="/Login#login"
                 className="inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-md text-white bg-primaryDark hover:bg-gray-700"
               >
                 Get started
-              </a>
+              </Link>
             </div>
           </nav>
         </div>

@@ -14,7 +14,7 @@ export default function Login() {
     const [form, setform] = useState(true)
     const toggleForms = () => setform(!form)
   return (
-    <div className="relative bg-gray-800 overflow-hidden">
+    <div id="login" className="relative bg-gray-800 overflow-hidden h-screen">
       <div className="hidden sm:block sm:absolute sm:inset-0" aria-hidden="true">
         <svg
           className="absolute bottom-0 right-0 transform translate-x-1/2 mb-48 text-gray-700 lg:top-0 lg:mt-28 lg:mb-0 xl:transform-none xl:translate-x-0"
@@ -65,7 +65,7 @@ export default function Login() {
               <div className="px-4 sm:px-6 sm:text-center md:max-w-2xl md:mx-auto lg:col-span-6 lg:text-left lg:flex">
                 <div>
                   <a
-                    href="#"
+                    href="/"
                     className="inline-flex items-center text-white bg-gray-900 rounded-full p-1 pr-2 sm:text-base lg:text-sm xl:text-base hover:text-gray-200"
                   >
                     <span className="px-3 py-0.5 text-white text-xs font-semibold leading-5 uppercase tracking-wide bg-primaryDark rounded-full">
@@ -129,15 +129,15 @@ export default function Login() {
                   <div className="px-4 py-6 bg-gray-50 border-t-2 border-gray-200 sm:px-10">
                     <p className="text-xs leading-5 text-gray-500">
                       By signing up, you agree to our{' '}
-                      <a  className="font-medium text-gray-900 hover:underline">
+                      <a href="/" className="font-medium text-gray-900 hover:underline">
                         Terms
                       </a>
                       ,{' '}
-                      <a  className="font-medium text-gray-900 hover:underline">
+                      <a href="/" className="font-medium text-gray-900 hover:underline">
                         Data Policy
                       </a>{' '}
                       and{' '}
-                      <a  className="font-medium text-gray-900 hover:underline">
+                      <a href="/" className="font-medium text-gray-900 hover:underline">
                         Cookies Policy
                       </a>
                       .
